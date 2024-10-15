@@ -1,5 +1,5 @@
 #Global
-project_prefix = "ishika-hybrid-architechture-part5"
+project_prefix = "ishika-hybrid-arch5"
 resource_owner = "Ishika Ray"
 
 #AWS INFRA
