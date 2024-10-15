@@ -18,7 +18,6 @@ variable "admin_src_addr" {
 variable "ssh_key" {
   type        = string
   description = "public key used for authentication in ssh-rsa format"
-  default = file("/Users/i.ray/my-new-key.pub")
 }
 #TF Cloud
 variable "tf_cloud_organization" {
