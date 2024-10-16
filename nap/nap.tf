@@ -17,7 +17,6 @@ resource "helm_release" "nginx-plus-ingresslink" {
     repository = "https://helm.nginx.com/stable"
     chart = "nginx-ingress"
     #version = "0.16.2"
-    version = latest
     namespace = kubernetes_namespace.nginx-ingress.metadata[0].name
     values = [templatefile("./charts/nap-ingresslink/values.yaml", { app = "${local.app}"})]
 
