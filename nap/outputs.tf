@@ -12,5 +12,5 @@ output "nap_deployment_name" {
     sensitive = true
 }
 output "external_name_2" {
-    value = try(data.kubernetes_service_v1.nginx-service.status.0.load_balancer.0.ingress.0.hostname, null)
+    value = try(data.kubernetes_service_v1.nginx-service.status.0.load_balancer.0.ingress.0.hostname, "ishika", null)
 }
