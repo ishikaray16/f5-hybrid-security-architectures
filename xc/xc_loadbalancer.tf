@@ -148,7 +148,6 @@ resource "volterra_http_loadbalancer" "lb_https" {
         name      = volterra_api_definition.api-def[0].name
         namespace = volterra_api_definition.api-def[0].namespace
         tenant    = var.xc_tenant
-        kind = "api_definition"
       }
       validation_disabled = var.xc_api_val ? false : true
       dynamic "validation_all_spec_endpoints" {

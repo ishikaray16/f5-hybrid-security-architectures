@@ -19,7 +19,7 @@ xc_multi_lb = false
 #XC API Protection and Discovery
 xc_api_disc = true
 xc_api_pro = true
-xc_api_spec = []
+xc_api_spec = ["https://treino.console.ves.volterra.io/api/object_store/namespaces/default/stored_objects/swagger/brewz-oas/v1-24-10-14"]
 #Enable API schema validation
 xc_api_val = false
 #Enable API schema validation on all endpoints
