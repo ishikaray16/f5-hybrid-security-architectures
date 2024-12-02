@@ -12,6 +12,6 @@ spec:
     - /Common/Shared/Proxy_Protocol_iRule
   selector:
     matchLabels:
-      app: ${local.app}   
+      app: ${local.app}-nginx-ingress-controller 
  YAML 
 }
