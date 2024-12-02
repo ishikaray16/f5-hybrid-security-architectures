@@ -19,7 +19,7 @@ data "tfe_outputs" "bigip-cis" {
 data "aws_eks_cluster_auth" "auth" {
   name = data.tfe_outputs.eks.values.cluster_name
 }
-data "kubernetes_service_v1" "nginx-service" {
+data "kubernetes_service" "nginx-service" {
   metadata {
     name = try(format("%s-%s-controller", helm_release.nginx-plus-ingress.0.name, helm_release.nginx-plus-ingress.0.chart), format("%s-%s-controller", helm_release.nginx-plus-ingresslink.0.name, helm_release.nginx-plus-ingresslink.0.chart))
     #namespace = try(helm_release.nginx-plus-ingress[0].namespace, helm_release.nginx-plus-ingresslink[0].namespace)
