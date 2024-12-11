@@ -303,12 +303,12 @@ jobs:
         run: terraform apply -auto-approve -input=false
 
   terraform_nap:
-    name: "NGINX App Protect"
+    name: "NGINX Ingress Controller"
     runs-on: ubuntu-latest
     needs: terraform_bigip_cis
     defaults:
       run:
-        working-directory: ./nap
+        working-directory: ./nic
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -326,7 +326,7 @@ jobs:
             cloud {
               organization = "${{ secrets.TF_CLOUD_ORGANIZATION }}"
               workspaces {
-                name = "${{ secrets.TF_CLOUD_WORKSPACE_NAP }}"
+                name = "${{ secrets.TF_CLOUD_WORKSPACE_NIC }}"
               }
             }
           }
