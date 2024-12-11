@@ -3,11 +3,11 @@ project_prefix = "ishika"
 resource_owner = "Ishika Ray"
 
 #AWS INFRA
-aws_region     = "eu-west-3"
-azs           = ["eu-west-3a", "eu-west-3b"]
+aws_region     = "ap-south-1"
+azs           = ["ap-south-1a", "ap-south-1b"]
 
 #Assets
-nic = true
+nic = false
 nap = true
 bigip = true
 bigip-cis = true
