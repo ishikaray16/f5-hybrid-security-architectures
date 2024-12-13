@@ -4,7 +4,7 @@ xc_tenant = "treino-ufahspac"
 xc_namespace = "default"
 
 #XC LB
-app_domain = "hybrid_architecture_5.f5-hyd-xcdemo.com"
+app_domain = "hybrid5.f5-hyd-xcdemo.com"
 
 #XC WAF
 xc_waf_blocking = true
